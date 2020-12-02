@@ -10,15 +10,15 @@
 // @updateURL    https://raw.githubusercontent.com/zenzeii/TUB-ISIS-auto-login/main/main.js
 // ==/UserScript==
 
-var TULoginButton;
-TULoginButton = document.evaluate(".//input[@type='submit' and @value='TU-Login']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+var isisLoginButton;
+isisLoginButton = document.evaluate(".//input[@type='submit' and @value='TU-Login']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
 var shibbolethLoginButton;
 shibbolethLoginButton = document.evaluate(".//button[@class='mail-default submit-button']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
-if (!TULoginButton) {
+if (!isisLoginButton) {
 	// comment this out if you are caught in loop when logging in
     window.addEventListener('load', shibbolethLoginButton.click(), false);
 } else {
-	window.addEventListener('load', TULoginButton.click(), false);
+	window.addEventListener('load', isisLoginButton.click(), false);
 }
