@@ -11,7 +11,7 @@ This Userscript was made for https://isis.tu-berlin.de/
 
 3. Tap Tampermonkey-icon in your browser > create new script > copy paste code from main.js or below > save
 
-```UserScript
+```javascript
 // ==UserScript==
 // @name         TUB-ISIS auto-login
 // @version      0.1
