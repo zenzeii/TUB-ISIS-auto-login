@@ -6,6 +6,8 @@
 // @match        https://*.tu-berlin.de/*
 // @grant        none
 // @run-at       document-idle
+// @downloadURL  https://raw.githubusercontent.com/zenzeii/TUB-ISIS-auto-login/main/main.js
+// @updateURL    https://raw.githubusercontent.com/zenzeii/TUB-ISIS-auto-login/main/main.js
 // ==/UserScript==
 
 var TULoginButton;
